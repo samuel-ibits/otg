@@ -1,0 +1,92 @@
+{
+  "expo": {
+    "name": "otgAftica",
+    "slug": "otgAftica",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.joegreat.otgAftica",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "This app uses your location to track movement patterns for analytics purposes.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "This app uses your location in the background to track movement patterns for analytics purposes.",
+        "NSLocationAlwaysUsageDescription": "This app uses your location in the background to track movement patterns for analytics purposes.",
+        "UIBackgroundModes": [
+          "location",
+          "fetch"
+        ]
+      }
+    },
+    "android": {
+      "package": "com.joegreat.otgAftica",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION",
+        "FOREGROUND_SERVICE",
+        "NOTIFICATIONS",
+        "ACCESS_WIFI_STATE",
+        "CHANGE_WIFI_STATE",
+        "NEARBY_WIFI_DEVICES",
+        "CAMERA",
+        "RECORD_AUDIO",
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION"
+      ],
+      "notification": {
+        "icon": "./assets/notification-icon.png",
+        "color": "#0145FE",
+        "channel": "default"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-font",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow OTG Africa to access your camera"
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow OTG Africa to use your location in the background for movement tracking.",
+          "locationAlwaysPermission": "Allow OTG Africa to use your location in the background for movement tracking.",
+          "locationWhenInUsePermission": "Allow OTG Africa to use your location for movement tracking."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/notification-icon.png",
+          "color": "#0145FE"
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "1f7b076f-e29b-4f6a-8be1-3a4020b70ab5"
+      }
+    },
+    "owner": "joegreat"
+  }
+}
